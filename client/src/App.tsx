@@ -25,8 +25,8 @@ function App() {
     <div>
       <h1>Store</h1>
       <ul>
-        <>{products.map((product, index) => (
-          <li key={index}>
+        <>{products.map(product => (
+          <li key={product.id}>
             <>{product.name} - {product.price}</>
           </li>
         ))}</>
